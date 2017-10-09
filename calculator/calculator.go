@@ -39,7 +39,9 @@ type Calculator struct {
 	values map[CryptoType]info
 }
 
-
+/*
+ * new calculator constructon
+ */
 func New() *Calculator {
 	fmt.Print("\033[2J")
 	screenGoto(1,1)
