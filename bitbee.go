@@ -22,7 +22,8 @@ func main() {
 		doneChan <- true
 	}()
 
-	tickChan := time.NewTicker(500 * time.Millisecond).C
+	ReadBitBay()
+	tickChan := time.NewTicker(5 * time.Second).C
 	for {
 		select {
 		case <- tickChan:
